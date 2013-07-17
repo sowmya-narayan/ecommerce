@@ -1,0 +1,6 @@
+
+class OrderSummary < ActiveRecord::Base
+  attr_accessible :order_id, :product_id, :qty_ordered, :total
+  
+ belongs_to :order
+end

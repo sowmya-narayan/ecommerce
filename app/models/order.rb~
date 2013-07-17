@@ -1,0 +1,3 @@
+class Order < ActiveRecord::Base
+  attr_accessible :Grand_total, :order_summary_id, :product_id, :user_id
+end

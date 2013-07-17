@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Name: MyString
+  Price: 1.5
+  qty_in_stock: 1
+  category_id: 1
+
+two:
+  Name: MyString
+  Price: 1.5
+  qty_in_stock: 1
+  category_id: 1
