@@ -1,0 +1,23 @@
+
+
+
+<%= form_tag "submit_order" do %>
+
+
+<div>
+  <%= label_tag :Category , "Category:"%>
+  <%= select :Category, :category_id, @categories, {:include_blank => "Please Select"} %>
+
+  <%= label_tag :Products , "Products" %>
+  <%= collection_select :Category, :product_id, Product.all, :id, :Name, :include_blank => "Please Select" %>
+
+  <%= label_tag :qty_in_stock , "qty_in_stock"%>
+  <%= text_field_tag 'product[qty_in_stock]' product[qty_in_stock]="a" %>
+   
+
+
+
+  <!--% collection_select :product, :category_id, Category.all, :id, :Name %-->
+</div>
+
+<% end %>

@@ -1,4 +1,12 @@
 Ecommerce::Application.routes.draw do
+  get "orders/new_order"
+
+  get "orders/show_order"
+
+  get "orders/update_order"
+
+  get "orders/delete_order"
+
   devise_for :users
 
   # The priority is based upon order of creation:
@@ -50,7 +58,7 @@ Ecommerce::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'orders#new_order'
 
   # See how all your routes lay out with "rake routes"
 
